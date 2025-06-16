@@ -13,7 +13,10 @@ variable "my_ip_cidr" {
     type        = string
 }
 
-variable "image_name" {}
+variable "image_name" {
+    description = "Name of the AMI to be used for the instance"
+    type        = string
+}
 
 variable "public_key_location" {   
     description = "Location of the public key file for SSH access"
